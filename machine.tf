@@ -2,7 +2,7 @@ resource "azurerm_linux_virtual_machine" "mac1" {
   name = var.vm-name
   resource_group_name = azurerm_resource_group.grp1.name
   location = azurerm_resource_group.grp1.location
-  size = "Standard_LRS"
+  size = "Standard_B2s"
   admin_username = "azureuser"
   network_interface_ids = [ azurerm_network_interface.NI.id ]
   admin_ssh_key {
