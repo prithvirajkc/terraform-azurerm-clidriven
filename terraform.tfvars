@@ -1,0 +1,9 @@
+env = "prod"
+ip-name = "azure-ip"
+NI-name = "azure-NI"
+rg-loc = "West Europe"
+rg-name = "demo-rg"
+subnet-name = "subntezz"
+vnet-name = "azure-vnet"
+vnet-space = [ "10.0.0.0/16" ]
+vm-name = "machine1"
