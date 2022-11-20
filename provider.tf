@@ -6,6 +6,12 @@ terraform {
         version = ">3.0.0"
       }
     }
+    backend "remote" {
+      organization = "last-cloud"
+      workspaces {
+        name = "cli-driven"
+      }
+    }
 }
 
 provider "azurerm" {
